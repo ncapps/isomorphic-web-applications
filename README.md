@@ -26,6 +26,27 @@
 - JavaScript can be used in both Node.js (server) and browser environments
 - Redux helps you manage application state and easily serialize this state to be sent from server to browser
 
+## Chapter 2. Sample Isomorphic App
+- Three main steps in an isomorphic app:
+  1. Server render
+  2. Initial browser render
+  3. Single-page application behavior
+- *Serializing* occurs when you take JSON and turn it into a string
+- *Hydrating* (or *deserializing*) the data means taking the string and converting it back into a JSON object
+- Redux is based on the idea of a single root object for the entire application, commonly referred to as the *store*
+- *Actions* perform the business logic - they are the controllers of the app
+- Actions are typically wrapped in JavaScript functions called *creators*
+- *Reducers* take input from the action and update the store. This decouples the actions and the store and enforces immutability of the store
+
+**Summary**
+- Babel and webpack are used to compile JavaScript
+- Webpack allows npm packages to be used with browser code
+- Application views are made up of React components
+- JSX is a template language for declaring components
+- Node.js server uses Express middleware to respond to request
+- An initial serialized state is of the app is sent to the browser
+- The browser uses a separate entry point to load in the initial state and start the app
+
 ## [Code Samples provided by the author](https://github.com/isomorphic-dev-js)
 
 ## Attribution
